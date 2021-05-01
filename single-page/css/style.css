@@ -1,0 +1,339 @@
+/*@import url('https://fonts.googleapis.com/css?family=Palanquin');*/
+body{
+    /*background-color: #f7f7f7 !important;*/
+    margin: 0;
+}
+/* width */
+body::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #ccc; 
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+*{
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+.nav{
+    padding: 15px 0;
+}
+.nav img{
+    vertical-align: bottom;
+}
+.header{
+    background: url(../img/Layer67.jpg);
+    height: 506px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.header h4{
+    font-size: 35px;
+    margin: 0;
+    line-height: 1.2
+}
+.header p{
+    font-size: 18px;
+}
+.header .pad{
+    width: 40%;
+}
+.pad{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.btn-outline{
+    padding: 4px 20px 7px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.clear{
+    clear: both;
+}
+.blue-heading{
+    font-size: 24px;
+    font-weight: 600;
+    /*font-family: "Segoe UI";*/
+    color: rgb(0, 188, 242);
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    padding: 40px 60px;
+}
+.bg-grey{
+    background: #eee;
+}
+.card-wrapper{
+    display: flex;
+}
+.card{
+    width: 25%;
+    padding: 0 15px 0;
+}
+.card img{
+    width: 100%;
+}
+.card ul.card-text{
+    padding-left: 18px;
+    font-size: 14px;
+}
+.card ul.card-text li{
+    padding: 7px 0px;
+    word-break: break-word;
+}
+.card .card-heading{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.tabbedpivots .tabs{
+    text-align: center;
+    padding: 30px 0;
+}
+.tabbedpivots .tabs li{
+    display: inline;
+    padding: 5px 20px;
+}
+.tabbedpivots .tabs li a{
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 2px 5px;
+}
+.tabbedpivots .tabs li a.active{
+    border-bottom: 2px solid #00bcf2;
+}
+.div_100{
+    display: flex;
+    align-items: center;
+}
+.div_100 > div:first-child{
+    padding-right: 50px;
+}
+.div_100 > div:last-child{
+    padding-left: 50px;
+}
+.div_40{
+    flex-basis: 40%;
+}
+.div_60{
+    flex-basis: 60%;
+}
+.w-100{
+    width: 100%;
+}
+.pl-ul{
+    padding-left: 18px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.img_card{
+    height: 175px;
+    width: 175px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 7px 0px #ccc;
+    margin: 10px;
+}
+.img_card > img{
+    width: 100%;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+hr{
+    border: none;
+    border-top: 1px solid #e4e4e4;
+}
+.footer{
+    background: #666666;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+.footer p{
+    margin: 0;
+}
+.footer a{
+    color: #fff;
+}
+.arrow{
+    text-align: right;
+    float: right;
+    margin: 30px;
+    cursor: pointer;
+}
+.arrow:hover{
+    opacity: .8;
+}
+.arrow > div{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: #dedede;
+}
+.arrow > div > img{
+    width: 100%;
+}
+
+
+/* Responsive */
+
+/* Extra small devices (phones, 600px and down) */
+/*@media only screen and (max-width: 600px) {*/
+@media only screen and (max-width: 767px) {
+    .header .pad {
+        width: 100%;
+    }
+    .pad {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header {
+        height: 406px;
+    }
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .card .card-heading {
+        padding: 0 15px;
+    }
+    .card ul.card-text{
+        padding: 0 15px 0 33px;
+    }
+    .blue-heading {
+        padding: 20px 10px;
+    }
+    .tabbedpivots .tabs {
+        text-align: center;
+        padding: 15px 0;
+    }
+    .div_100 {
+        flex-wrap: wrap;
+        background: #f5f5f5;
+        border-radius: 5px;
+    }
+    .div_100 > div{
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .div_100 > div:last-child, .div_100 > div:first-child{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .pivot .div_100 .div_40{
+        order: 1;
+        padding: 20px;
+    }
+    .img_card {
+        height: 65px;
+        width: 65px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .header .pad {
+        width: 65%;
+    }
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 50%;
+        padding: 10px 15px;
+    }
+    .pivot .div_100 > .div_40 {
+        padding-right: 50px;
+        position: absolute;
+        padding-left: 50px;
+        color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #00000059;
+        padding-top: 13%;
+    }
+    .div_100 {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .div_100 > div:first-child {
+        padding-right: 0px;
+    }
+    .div_100 > div:last-child {
+        padding-left: 0px;
+    }
+    .div_60 {
+        flex-basis: 100%;
+    }
+    .img_card {
+        height: 100px;
+        width: 100px;
+        padding: 15px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .div_100 > div {
+        padding: 20px;
+    }
+    .div_100 > div:first-child {
+        padding-right: 20px;
+    }
+    .div_100 > div:last-child {
+        padding-left: 20px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+@media only screen and (min-width: 1300px) {
+
+}
